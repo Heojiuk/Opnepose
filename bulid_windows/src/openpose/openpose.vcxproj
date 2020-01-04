@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C0B2E72-140E-355E-9050-505363C3527B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>openpose</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openpose.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openpose</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">openpose</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openpose.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openposed</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">openposed</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR="Release";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR=\"Release\";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;..\..\..\3rdparty\windows\opencv\x64\vc14\lib\opencv_world310.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflags.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glog.lib;..\..\..\3rdparty\windows\caffe\lib\caffe.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_system-vc140-mt-1_61.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_filesystem-vc140-mt-1_61.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/openpose/bulid_windows/src/openpose/Release/openpose.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/git/openpose/bulid_windows/$(Platform)/$(Configuration)/openpose.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR="Release";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR=\"Release\";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;..\..\..\3rdparty\windows\opencv\x64\vc14\lib\opencv_world310.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflags.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glog.lib;..\..\..\3rdparty\windows\caffe\lib\caffe.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_system-vc140-mt-1_61.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_filesystem-vc140-mt-1_61.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/openpose/bulid_windows/src/openpose/Release/openpose.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/git/openpose/bulid_windows/$(Platform)/$(Configuration)/openpose.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR="Debug";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR=\"Debug\";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;..\..\..\3rdparty\windows\opencv\x64\vc14\lib\opencv_world310.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflagsd.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glogd.lib;..\..\..\3rdparty\windows\caffe\lib\caffe.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_system-vc140-mt-1_61.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_filesystem-vc140-mt-1_61.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/openpose/bulid_windows/src/openpose/Debug/openposed.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/git/openpose/bulid_windows/$(Platform)/$(Configuration)/openposed.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR="Debug";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;OP_EXPORTS;BOOST_ALL_NO_LIB;USE_CAFFE;USE_CUDA;CMAKE_INTDIR=\"Debug\";openpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\openpose\include;D:\git\openpose\3rdparty\windows\opencv\include;D:\git\openpose\3rdparty\windows\caffe\include;D:\git\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\git\openpose\3rdparty\windows\caffe3rdparty\include\boost-1_61;D:\git\openpose\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;..\..\..\3rdparty\windows\opencv\x64\vc14\lib\opencv_world310.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflagsd.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glogd.lib;..\..\..\3rdparty\windows\caffe\lib\caffe.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_system-vc140-mt-1_61.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\libboost_filesystem-vc140-mt-1_61.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/openpose/bulid_windows/src/openpose/Debug/openposed.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/git/openpose/bulid_windows/$(Platform)/$(Configuration)/openposed.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\face\renderFace.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/openpose_generated_renderFace.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/openpose_generated_renderFace.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\$(Configuration)\openpose_generated_renderFace.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\$(Configuration)\openpose_generated_renderFace.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/openpose_generated_renderFace.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/$(Configuration)/openpose_generated_renderFace.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/face/openpose_generated_renderFace.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\openpose_generated_renderFace.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\$(Configuration)\openpose_generated_renderFace.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\$(Configuration)\openpose_generated_renderFace.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\hand\renderHand.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/openpose_generated_renderHand.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/openpose_generated_renderHand.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\$(Configuration)\openpose_generated_renderHand.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\$(Configuration)\openpose_generated_renderHand.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/openpose_generated_renderHand.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/$(Configuration)/openpose_generated_renderHand.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/hand/openpose_generated_renderHand.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\openpose_generated_renderHand.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\$(Configuration)\openpose_generated_renderHand.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\$(Configuration)\openpose_generated_renderHand.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\net\maximumBase.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_maximumBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_maximumBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_maximumBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_maximumBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_maximumBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_maximumBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_maximumBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_maximumBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_maximumBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_maximumBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\net\nmsBase.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_nmsBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_nmsBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_nmsBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_nmsBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_nmsBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_nmsBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_nmsBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_nmsBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_nmsBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_nmsBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\net\resizeAndMergeBase.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_resizeAndMergeBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_resizeAndMergeBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_resizeAndMergeBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_resizeAndMergeBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_resizeAndMergeBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/$(Configuration)/openpose_generated_resizeAndMergeBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_resizeAndMergeBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\openpose_generated_resizeAndMergeBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_resizeAndMergeBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_resizeAndMergeBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\pose\bodyPartConnectorBase.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_bodyPartConnectorBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_bodyPartConnectorBase.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_bodyPartConnectorBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_bodyPartConnectorBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_bodyPartConnectorBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_bodyPartConnectorBase.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_bodyPartConnectorBase.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_bodyPartConnectorBase.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_bodyPartConnectorBase.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_bodyPartConnectorBase.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\pose\renderPose.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_renderPose.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_renderPose.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_renderPose.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_renderPose.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_renderPose.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/$(Configuration)/openpose_generated_renderPose.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_renderPose.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\openpose_generated_renderPose.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_renderPose.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_renderPose.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\openpose\src\openpose\tracking\pyramidalLK.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/openpose_generated_pyramidalLK.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/openpose_generated_pyramidalLK.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\$(Configuration)\openpose_generated_pyramidalLK.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\$(Configuration)\openpose_generated_pyramidalLK.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/openpose_generated_pyramidalLK.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj -D generated_cubin_file:STRING=D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/$(Configuration)/openpose_generated_pyramidalLK.cu.obj.cubin.txt -P D:/git/openpose/bulid_windows/src/openpose/CMakeFiles/openpose.dir/tracking/openpose_generated_pyramidalLK.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.depend;D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\openpose_generated_pyramidalLK.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\$(Configuration)\openpose_generated_pyramidalLK.cu.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\$(Configuration)\openpose_generated_pyramidalLK.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\face\$(Configuration)\openpose_generated_renderFace.cu.obj" />
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\hand\$(Configuration)\openpose_generated_renderHand.cu.obj" />
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_maximumBase.cu.obj" />
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_nmsBase.cu.obj" />
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\net\$(Configuration)\openpose_generated_resizeAndMergeBase.cu.obj" />
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_bodyPartConnectorBase.cu.obj" />
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\pose\$(Configuration)\openpose_generated_renderPose.cu.obj" />
+    <Object Include="D:\git\openpose\bulid_windows\src\openpose\CMakeFiles\openpose.dir\tracking\$(Configuration)\openpose_generated_pyramidalLK.cu.obj" />
+    <ClCompile Include="D:\git\openpose\src\openpose\3d\cameraParameterReader.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\3d\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/3d/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\3d\jointAngleEstimation.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\3d\poseTriangulation.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\calibration\cameraParameterEstimation.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\calibration\gridPatternFunctions.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\array.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\cvMatToOpInput.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\cvMatToOpOutput.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\datum.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/core/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\core\gpuRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\keepTopNPeople.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\keypointScaler.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\opOutputToCvMat.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\point.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\rectangle.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\renderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\core\scaleAndSizeExtractor.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/face/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\face\faceDetector.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\faceDetectorOpenCV.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\faceExtractorCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\faceExtractorNet.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\faceCpuRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\faceGpuRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\faceRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\face\renderFace.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\bvhSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\cocoJsonSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/filestream/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\fileSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\fileStream.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\heatMapSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\imageSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\jsonOfstream.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\keypointSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\peopleJsonSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\udpSender.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\filestream\videoSaver.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gpu\cuda.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gpu\gpu.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gpu\opencl.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gui\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/gui/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\gui\frameDisplayer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gui\gui.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gui\guiAdam.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gui\gui3D.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\gui\guiInfoAdder.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/hand/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\handDetector.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\handDetectorFromTxt.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\handExtractorCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\handExtractorNet.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\handCpuRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\handGpuRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\handRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\hand\renderHand.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\maximumBase.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\maximumCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\netCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\nmsBase.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\nmsBaseCL.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\nmsCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\resizeAndMergeBase.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\resizeAndMergeBaseCL.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\net\resizeAndMergeCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\bodyPartConnectorBase.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\bodyPartConnectorCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/pose/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseCpuRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseExtractor.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseExtractorCaffe.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseExtractorNet.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseGpuRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseParameters.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseParametersRender.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\poseRenderer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\pose\renderPose.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/producer/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\flirReader.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\imageDirectoryReader.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\ipCameraReader.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\producer.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\spinnakerWrapper.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\videoCaptureReader.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\videoReader.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\producer\webcamReader.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\thread\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/thread/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\tracking\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/tracking/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\tracking\personIdExtractor.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\tracking\personTracker.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\tracking\pyramidalLK.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\utilities\errorAndLog.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\utilities\fileSystem.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\utilities\flagsToOpenPose.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\utilities\keypoint.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\utilities\openCv.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\utilities\profiler.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\utilities\string.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\defineTemplates.cpp">
+      <ObjectFileName>$(IntDir)/wrapper/defineTemplates.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\wrapperAuxiliary.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\wrapperStructExtra.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\wrapperStructFace.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\wrapperStructHand.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\wrapperStructInput.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\wrapperStructOutput.cpp" />
+    <ClCompile Include="D:\git\openpose\src\openpose\wrapper\wrapperStructPose.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

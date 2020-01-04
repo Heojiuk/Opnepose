@@ -1,0 +1,156 @@
+﻿  supose_skeleton.cpp
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/mat.hpp(1965): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/persistence.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/utility.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/utility.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+..\..\..\examples\tutorial_wrapper\supose_skeleton.cpp(84): warning C4245: '초기화 중': 'int'에서 'google::uint64'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(395): warning C4244: '인수': 'const unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(378): note: 클래스 템플릿 멤버 함수 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::multisetToThreads(void)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(197): note: 컴파일 중인 함수 템플릿 인스턴스화 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::multisetToThreads(void)'에 대한 참조를 확인하십시오.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/wrapper/wrapper.hpp(1222): note: 클래스 템플릿 멤버 함수 'void op::Wrapper<std::vector<UserDatum,std::allocator<_Ty>>,std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::allocator<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>>>>>>::reset(void)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              _Ty=UserDatum,
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/wrapper/wrapper.hpp(308): note: 컴파일 중인 함수 템플릿 인스턴스화 'void op::Wrapper<std::vector<UserDatum,std::allocator<_Ty>>,std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::allocator<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>>>>>>::reset(void)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=UserDatum,
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/wrapper/wrapper.hpp(283): note: 클래스 템플릿 멤버 함수 'op::Wrapper<std::vector<UserDatum,std::allocator<_Ty>>,std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::allocator<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>>>>>>::Wrapper(const op::ThreadManagerMode)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              _Ty=UserDatum,
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  ..\..\..\examples\tutorial_wrapper\supose_skeleton.cpp(528): note: 컴파일 중인 함수 템플릿 인스턴스화 'op::Wrapper<std::vector<UserDatum,std::allocator<_Ty>>,std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::allocator<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>>>>>>::Wrapper(const op::ThreadManagerMode)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=UserDatum,
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  ..\..\..\examples\tutorial_wrapper\supose_skeleton.cpp(528): note: 컴파일 중인 클래스 템플릿 인스턴스화 'op::Wrapper<std::vector<UserDatum,std::allocator<_Ty>>,std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>,std::allocator<std::shared_ptr<std::vector<_Ty,std::allocator<_Ty>>>>>>>>'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=UserDatum,
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+D:\git\openpose\include\openpose/thread/threadManager.hpp(407): warning C4244: '인수': 'const unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(410): warning C4244: '인수': 'const unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(419): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(423): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(428): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(463): warning C4244: '인수': 'const unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(446): note: 클래스 템플릿 멤버 함수 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::checkAndCreateEmptyThreads(void)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(384): note: 컴파일 중인 함수 템플릿 인스턴스화 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::checkAndCreateEmptyThreads(void)'에 대한 참조를 확인하십시오.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(138): note: 클래스 템플릿 멤버 함수 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::add(const unsigned __int64,const TWorker &,const unsigned __int64,const unsigned __int64)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TWorker=std::shared_ptr<op::Worker<std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>>>
+          ]
+  D:\git\openpose\include\openpose/wrapper/wrapper.hpp(1339): note: 컴파일 중인 함수 템플릿 인스턴스화 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::add(const unsigned __int64,const TWorker &,const unsigned __int64,const unsigned __int64)'에 대한 참조를 확인하십시오.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TWorker=std::shared_ptr<op::Worker<std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>>>
+          ]
+D:\git\openpose\include\openpose/thread/threadManager.hpp(489): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(476): note: 클래스 템플릿 멤버 함수 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::checkAndCreateQueues(void)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(387): note: 컴파일 중인 함수 템플릿 인스턴스화 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::checkAndCreateQueues(void)'에 대한 참조를 확인하십시오.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+D:\git\openpose\include\openpose/thread/threadManager.hpp(492): warning C4244: '인수': 'const unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(493): warning C4244: '인수': 'const unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(502): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(505): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(512): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(514): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/threadManager.hpp(517): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/subThread.hpp(113): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  D:\git\openpose\include\openpose/thread/subThread.hpp(57): note: 클래스 템플릿 멤버 함수 'bool op::SubThread<TDatums,TWorker>::workTWorkers(TDatums &,const bool)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TWorker=std::shared_ptr<op::Worker<std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>>>
+          ]
+  D:\git\openpose\include\openpose/thread/subThreadQueueIn.hpp(56): note: 컴파일 중인 함수 템플릿 인스턴스화 'bool op::SubThread<TDatums,TWorker>::workTWorkers(TDatums &,const bool)'에 대한 참조를 확인하십시오.
+          with
+          [
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TWorker=std::shared_ptr<op::Worker<std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>>>
+          ]
+  D:\git\openpose\include\openpose/thread/thread.hpp(180): note: 클래스 템플릿 멤버 함수 'void op::Thread<TDatums,TWorker>::threadFunction(void)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TWorker=std::shared_ptr<op::Worker<std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>>>
+          ]
+  D:\git\openpose\include\openpose/thread/thread.hpp(141): note: 컴파일 중인 함수 템플릿 인스턴스화 'void op::Thread<TDatums,TWorker>::threadFunction(void)'에 대한 참조를 확인하십시오.
+          with
+          [
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TWorker=std::shared_ptr<op::Worker<std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>>>
+          ]
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(378): note: 클래스 템플릿 멤버 함수 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::multisetToThreads(void)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+  D:\git\openpose\include\openpose/thread/threadManager.hpp(197): note: 컴파일 중인 함수 템플릿 인스턴스화 'void op::ThreadManager<TDatumsSP,std::shared_ptr<op::Worker<TDatumsSP>>,op::Queue<TDatumsSP,std::queue<TDatums,std::deque<_Ty,std::allocator<_Ty>>>>>::multisetToThreads(void)'에 대한 참조를 확인하십시오.
+          with
+          [
+              TDatumsSP=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              TDatums=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>,
+              _Ty=std::shared_ptr<std::vector<UserDatum,std::allocator<UserDatum>>>
+          ]
+D:\git\openpose\include\openpose/thread/subThread.hpp(119): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\git\openpose\include\openpose/thread/subThread.hpp(120): warning C4244: '인수': 'unsigned __int64'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+Release\supose_skeleton.obj : fatal error LNK1112: 'X86' 모듈 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.

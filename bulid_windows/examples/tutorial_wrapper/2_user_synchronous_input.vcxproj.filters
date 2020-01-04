@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\git\openpose\examples\tutorial_wrapper\2_user_synchronous_input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7BC8AFFA-F585-3B07-977A-49699ACA96EF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

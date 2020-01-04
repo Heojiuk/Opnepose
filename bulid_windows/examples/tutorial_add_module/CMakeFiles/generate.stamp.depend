@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+D:/git/openpose/cmake/OpenPose.vcxproj.user
+D:/git/openpose/cmake/Utils.cmake
+D:/git/openpose/examples/tutorial_add_module/CMakeLists.txt

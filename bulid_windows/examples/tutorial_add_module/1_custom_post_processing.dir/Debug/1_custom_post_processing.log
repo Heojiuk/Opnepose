@@ -1,0 +1,11 @@
+﻿  1_custom_post_processing.cpp
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/mat.hpp(1965): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/persistence.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/utility.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\git\openpose\3rdparty\windows\opencv\include\opencv2/core/utility.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\git\openpose\examples\tutorial_add_module\1_custom_post_processing.cpp(73): warning C4245: '초기화 중': 'int'에서 'google::uint64'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
+d:\git\openpose\examples\tutorial_add_module\userpostprocessing.hpp(67): warning C4702: 접근할 수 없는 코드입니다.
+d:\git\openpose\examples\tutorial_add_module\userpostprocessing.hpp(56): warning C4702: 접근할 수 없는 코드입니다.
+     D:/git/openpose/bulid_windows/examples/tutorial_add_module/Debug/1_custom_post_processing.lib 라이브러리 및 D:/git/openpose/bulid_windows/examples/tutorial_add_module/Debug/1_custom_post_processing.exp 개체를 생성하고 있습니다.
+  1_custom_post_processing.vcxproj -> D:\git\openpose\bulid_windows\x64\Debug\1_custom_post_processing.exe
+  1_custom_post_processing.vcxproj -> D:/git/openpose/bulid_windows/x64/Debug/1_custom_post_processing.pdb (Full PDB)
